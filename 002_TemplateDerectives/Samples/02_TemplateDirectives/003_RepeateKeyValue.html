@@ -26,7 +26,8 @@
             <!--<p ng-repeat="item in items"> - создать параграф для каждого элемента в items-->
             <p ng-repeat="item in items">
                 <!--<span ng-repeat="(key, value) in item"> - обход свойств всех свойств объекта item, key - имя свойства, value - значение свойства -->
-                <span ng-repeat="(key, value) in item">{{key}} = {{value}}, </span>
+                <span class="col-sm-1">{{$index}}</span>
+                <span ng-repeat="(key, value) in item">key [{{key}}] = {{value}} _ </span>
             </p>
         </div>
 </body>

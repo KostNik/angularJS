@@ -1,3 +1,5 @@
 ﻿<ul>
-    <li ng-repeat="item in items">{{item.name}} ({{item.value}})</li>
+    <li class="list-group" ng-repeat="item in items"><span ng-if="$odd" class="list-group-item-info">INFO</span>{{item.name}}
+        ({{item.value}})
+    </li>
 </ul>
